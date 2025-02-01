@@ -24,4 +24,4 @@ This project is a simple login page built using HTML and CSS. It includes fields
 - Improve UI/UX with animations and better styling.
 
 ## Author
-[Your Name]
+Prashant Kumar
