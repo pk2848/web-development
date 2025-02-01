@@ -1,0 +1,188 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./background.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Login page styling */
+.loginpage {
+    background-color: rgba(255, 255, 255, 0.17);
+    width: 40%;
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+
+/* Heading styling */ 
+h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10%;
+    
+    font-weight: 800;
+}
+
+
+/* Inner login fields */
+.inner-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10%;
+}
+
+.inner-login input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Options (checkbox and forgot password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+    font-size: 0.9rem;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.options a {
+    color: #fafbfd;
+    text-decoration: underline;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Login button styling */
+.login-btn {
+    width: 20%;
+    padding: 10px;
+    font-size:25px;
+    border-radius: 10px;
+    
+    background:linear-gradient(rgb(206, 118, 118),rgb(141, 141, 237)) ;
+}
+
+@media screen and  (min-width:320px) and (max-width:480px){
+    .loginpage {
+        background-color: rgba(255, 255, 255, 0.17);
+        width: 80%;
+        padding: 5%;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+    h1 {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 10%;
+        font-weight: 800;
+    }
+
+    .inner-login input {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+        font-size: 0.6rem;
+    }
+    .login-btn {
+   
+        width: 40%;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 10px;
+        background: linear-gradient(rgb(206, 118, 118),rgb(141, 141, 237));
+    }
+    .options label{
+        
+        margin-left: -10px;
+        /* margin-top: 10px; */
+    }
+
+}
+
+@media screen and  (min-width:480px) and (max-width:768px){
+    .login-btn {
+        height: 50px;
+        width: 50%;
+        padding: 10px;
+        font-size: 25px;
+        border-radius: 10px;
+        background: linear-gradient(rgb(206, 118, 118),rgb(141, 141, 237));
+    }
+
+    .inner-login input {
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: #333;
+        margin-bottom: 10%;
+        font-weight: 800;
+    }
+    
+    .loginpage{
+        padding: 30px;
+    }
+    .options{
+        font-size: 10px;
+    }
+
+    .inner label{
+        margin-left: -10px;
+       
+    }
+}
+
+@media screen and  (min-width:480px) and (max-width:1024px){
+
+    .login-btn {
+        width: 50%;
+    }
+}
